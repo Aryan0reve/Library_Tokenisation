@@ -1,0 +1,76 @@
+# 📚 Library Tokenization System
+
+A MERN stack application for managing library storage boxes with real-time tokenization and dual interfaces.
+
+## Quick Start
+
+Clone repository
+git clone <repository-url>
+cd library-tokenization
+
+Backend setup
+cd backend
+npm install
+npm start # Runs on port 5000
+
+Student frontend (new terminal)
+cd student-frontend
+npm install
+npm start # Runs on port 3000
+
+Library frontend (new terminal)
+cd library-frontend
+npm install
+npm start # Runs on port 3001
+
+text
+
+## Configuration
+
+Create `backend/.env`:
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/LIBRARY_TOKENISATION
+JWT_SECRET=your-secret-key-here
+LIBRARY_PASSWORD=library123
+PORT=5000
+
+text
+
+## Features
+
+- **500 Storage Boxes** with visual management
+- **Real-time Updates** via Socket.io
+- **Dual Interfaces**: Student portal + Library dashboard
+- **6-digit Access Codes** for secure access
+- **No Time Restrictions** - permanent storage
+
+## Usage
+
+### Student Portal (localhost:3000)
+
+1. Register/Login with email
+2. Request storage → Get 6-digit code
+3. Show code to librarian
+
+### Library Dashboard (localhost:3001)
+
+1. Login with password: `library123`
+2. See 500 boxes (Green=Available, Red=Occupied)
+3. Assign boxes to student requests
+4. Release storage with access codes
+
+## Tech Stack
+
+- **Frontend**: React.js, Socket.io-client
+- **Backend**: Node.js, Express.js, Socket.io
+- **Database**: MongoDB Atlas
+- **Auth**: JWT
+
+## URLs
+
+- **Student Portal**: http://localhost:3000
+- **Library Dashboard**: http://localhost:3001
+- **API**: http://localhost:5000
+
+---
+
+**Login Credentials:** Library password = `library123`
