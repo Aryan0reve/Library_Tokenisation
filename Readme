@@ -1,11 +1,11 @@
-# 📚 Library Tokenization System
+#  Library Tokenization System
 
 A MERN stack application for managing library storage boxes with real-time tokenization and dual interfaces.
 
 ## Quick Start
 
 Clone repository
-git clone <repository-url>
+git clone <https://github.com/Aryan0reve/Library_Tokenisation.git>
 cd library-tokenization
 
 Backend setup
@@ -33,7 +33,9 @@ JWT_SECRET=your-secret-key-here
 LIBRARY_PASSWORD=library123
 PORT=5000
 
-text
+Here I have not removed these, for easy checking. So no need to make this change. If want to run for self, then make changes.
+
+
 
 ## Features
 
