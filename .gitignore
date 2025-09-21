@@ -1,25 +1,5 @@
-# Dependencies
+# This is for GitHub, not Railway
 node_modules/
-
-# Production builds
 build/
-dist/
-
-# Logs
 *.log
-npm-debug.log*
-
-# Cache
-.cache/
-
-# Editor files
 .vscode/
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Temporary files
-*.tmp
-*.temp
