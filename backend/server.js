@@ -15,8 +15,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://localhost:3001", process.env.STUDENT_FRONTEND_URL,
-      process.env.LIBRARY_FRONTEND_URL],
+    origin: ["http://localhost:3000", "http://localhost:3001"],
     methods: ["GET", "POST"]
   }
 });
@@ -24,8 +23,7 @@ const io = socketIo(server, {
 // Middleware
 // CORS configuration
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001", process.env.STUDENT_FRONTEND_URL,
-      process.env.LIBRARY_FRONTEND_URL],
+  origin: ["http://localhost:3000", "http://localhost:3001"],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"]
@@ -53,7 +51,9 @@ io.on('connection', (socket) => {
   });
 });
 
+
 const PORT = process.env.PORT || 5000;
-server.listen(PORT, '0.0.0.0', () => {
+server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
